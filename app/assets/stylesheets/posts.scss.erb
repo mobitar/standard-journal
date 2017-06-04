@@ -92,12 +92,12 @@ $sub-color: #a3a3a3;
 }
 
 .liked {
-  fill: #<%= BLOG_CONFIG["background_color"] %>;
+  fill: #<%= BLOG_CONFIG["foreground_color"] %>;
   pointer-events: none;
 }
 
 .unliked {
-  fill: #<%= BLOG_CONFIG["background_color"] %>;
+  fill: #<%= BLOG_CONFIG["foreground_color"] %>;
   pointer-events: none;
 }
 
@@ -110,7 +110,7 @@ $sub-color: #a3a3a3;
   font-size: 16px;
   text-align: left;
   margin-left: -6px;
-  color: $sub-color;
+  color: #<%= BLOG_CONFIG["foreground_color"] %>;
   margin-top: -7px;
   display: inline-block;
   vertical-align: middle;
