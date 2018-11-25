@@ -32,6 +32,16 @@
     <%= auto_discovery_link_tag( :rss, {:controller => "posts", :action => "feed"} ) %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <%= render :partial => 'layouts/header' %>
+      <div id="posts-container">
+        <%= yield %>
+      </div>
+      <%= render :partial => 'layouts/footer' %>
+    </div>
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -48,15 +58,5 @@
       })();
     </script>
     <!-- End Matomo Code -->
-  </head>
-
-  <body>
-    <div id="main-container">
-      <%= render :partial => 'layouts/header' %>
-      <div id="posts-container">
-        <%= yield %>
-      </div>
-      <%= render :partial => 'layouts/footer' %>
-    </div>
   </body>
 </html>
