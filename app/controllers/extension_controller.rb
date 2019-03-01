@@ -19,9 +19,7 @@ class ExtensionController < ApplicationController
         :verb => "post",
         :context => "Note",
         :content_types => ["Note"],
-        :permissions => "read",
-        :accepts_decrypted => true,
-        :accepts_encrypted => false
+        :access_type => "decrypted"
       },
     ]
     render :json => {:name => name, :supported_types => supported_types, :actions => actions}
