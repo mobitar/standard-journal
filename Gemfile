@@ -9,7 +9,7 @@ end
 gem 'redcarpet'
 gem 'dotenv-rails', '~> 2.1.1'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'mysql2'
+gem 'mysql2', '~> 0.4.10'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
